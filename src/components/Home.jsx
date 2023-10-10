@@ -9,20 +9,24 @@ const Home = () => {
                         <div className="d-flex flex-grow-1">
                             <div className="align-self-center">
                                 <div className="top-icon px-2">
-                                    <i class="bi bi-gear"></i>
+                                    <i className="bi bi-gear"></i>
                                 </div>
                             </div>
                             <div className="top-name align-self-center fs-2">
                                 <a className="navbar-brand" href="#">CSS Generater</a>
                             </div>
                         </div>
-                        <div className="d-flex">
+                        <div className="d-flex gap-2">
                             <div className="align-self-center d-none d-sm-block text-white">
-                                <a className="nav-link" href="#">My Account</a>
+                                <a className="nav-link" href="#">Login</a>
+                            </div>
+                            <div className="vr text-white" style={{ width: '3px' }}></div>
+                            <div className="align-self-center d-none d-sm-block text-white">
+                                <a className="nav-link" href="#">My account</a>
                             </div>
                             <div className="align-self-center">
-                                <div className="person-icon px-2">
-                                    <i class="bi bi-person-circle"></i>
+                                <div className="person-icon pe-2">
+                                    <i className="bi bi-person-circle"></i>
                                 </div>
                             </div>
                         </div>
@@ -37,7 +41,7 @@ const Home = () => {
                                 <div className="card-body">
                                     <h3 className="card-title">liner-gradient</h3>
                                     <div className="card-icon text-center">
-                                        <i class="bi bi-brush"></i>
+                                        <i className="bi bi-brush"></i>
                                     </div>
                                     <p className="card-text"></p>
                                 </div>
@@ -49,7 +53,7 @@ const Home = () => {
                                 <div className="card-body">
                                     <h3 className="card-title">box-shadow</h3>
                                     <div className="card-icon text-center">
-                                        <i class="bi bi-back"></i>
+                                        <i className="bi bi-back"></i>
                                     </div>
                                     <p className="card-text"></p>
                                 </div>
@@ -61,7 +65,7 @@ const Home = () => {
                                 <div className="card-body">
                                     <h3 className="card-title">flex-container</h3>
                                     <div className="card-icon text-center">
-                                        <i class="bi bi-grid-3x3-gap"></i>
+                                        <i className="bi bi-grid-3x3-gap"></i>
                                     </div>
                                     <p className="card-text"></p>
                                 </div>
@@ -73,7 +77,7 @@ const Home = () => {
                                 <div className="card-body">
                                     <h3 className="card-title">talk-to-AI</h3>
                                     <div className="card-icon text-center">
-                                        <i class="bi bi-chat-left-text"></i>
+                                        <i className="bi bi-chat-left-text"></i>
                                     </div>
                                     <p className="card-text"></p>
                                 </div>
