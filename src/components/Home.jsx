@@ -1,6 +1,12 @@
 import React from 'react'
+import { auth } from '../../api/firebase'
+import { useAuthState } from 'react-firebase-hooks/auth';
+import Login from './Login';
+import Logout from './Logout';
 
 const Home = () => {
+    const [user] = useAuthState(auth);
+
     return (
         <>
             <header>
@@ -17,18 +23,19 @@ const Home = () => {
                             </div>
                         </div>
                         <div className="d-flex gap-2">
-                            <div className="align-self-center d-none d-sm-block text-white">
-                                <a className="nav-link" href="#">Login</a>
-                            </div>
+                            {user ? (<Logout />) : (<Login />)}
                             <div className="vr text-white" style={{ width: '3px' }}></div>
                             <div className="align-self-center d-none d-sm-block text-white">
                                 <a className="nav-link" href="#">My account</a>
                             </div>
-                            <div className="align-self-center">
-                                <div className="person-icon pe-2">
-                                    <i className="bi bi-person-circle"></i>
+                            {user ?
+                                <img src={user.photoURL} alt="" /> :
+                                <div className="align-self-center">
+                                    <div className="person-icon pe-2">
+                                        <i className="bi bi-person-circle"></i>
+                                    </div>
                                 </div>
-                            </div>
+                            }
                         </div>
                     </div>
                 </div>
